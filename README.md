@@ -68,21 +68,21 @@ Para gerar o instalador final do software (.exe ou .msi para Windows), execute:
 npx tauri build
 ```
 
-### Estrutura do projeto 
+## 📂 Estrutura do Projeto
 
-forge-software/
-├── src/                    # Frontend React/TS
-│   ├── components/         # Componentes isolados (Dashboard, Monitor, etc.)
-│   ├── hooks/              # Custom Hooks (Comunicação Tauri <-> React)
-│   ├── types/              # Tipagens globais do TypeScript
-│   ├── App.tsx             # Roteador central e Topbar
-│   └── supabase.ts         # Conexão com o banco de dados
-├── src-tauri/              # Backend Rust
-│   ├── src/                # Motor de telemetria e Comandos Tauri
-│   ├── Cargo.toml          # Dependências do Rust
-│   └── tauri.conf.json     # Configurações da janela do software
-├── package.json            # Dependências do Node
-└── tailwind.config.cjs     # Temas e cores personalizadas do FORGE
+*  **`forge-software/`**
+  *  **`src/`** — *Frontend React/TS*
+    *  **`components/`** — *Componentes isolados (Dashboard, Monitor, etc.)*
+    *  **`hooks/`** — *Custom Hooks (Comunicação Tauri <-> React)*
+    *  **`types/`** — *Tipagens globais do TypeScript*
+    *  **`App.tsx`** — *Roteador central e Topbar*
+    *  **`supabase.ts`** — *Conexão com o banco de dados*
+  *  **`src-tauri/`** — *Backend Rust*
+    *  **`src/`** — *Motor de telemetria e Comandos Tauri*
+    *  **`Cargo.toml`** — *Dependências do Rust*
+    *  **`tauri.conf.json`** — *Configurações da janela do software*
+  *  **`package.json`** — *Dependências do Node*
+  *  **`tailwind.config.cjs`** — *Temas e cores personalizadas do FORGE*
 
 ## Segurança e Privacidade
 
